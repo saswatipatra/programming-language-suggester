@@ -9,13 +9,72 @@
   </head>
   <body>
     <div class="container">
-      <div class="back-color1 well">
-        <h1>Welcome to our suggestion survey page... </h1>
-        <p>Kindly click below to take the survey and get to know which programming Language you should start with</p>
-
-          <div class="col-md-2">
-            <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/55731090_2574065992663435_6036581413610848256_o.jpg?_nc_cat=111&_nc_oc=AQlgoPJzu42NfeTvY7LSqDEPURdnblH_9oAEWQr28PDCXSvVS-WUidWDSYwbqm-UoJ-sQTFC5M1pWyd8sZMJ9XrH&_nc_ht=scontent-sea1-1.xx&oh=d7c48069bbd3f0113f366b773dd2e0e8&oe=5D9DC708" class="img-responsive img-rounded" alt="Profile Pic">
+      <form id="surveyForm">
+        <div class="form-group back-color1 well">
+          <h1>Welcome to our suggestion survey page... </h1>
+          <p>Kindly click below to take the survey and get to know which programming Language you should start with</p>
+          <button class="btn btn-success" id="continue">Continue</button>
+        </div>
+        <div class="form-group back-color1 well">
+          <h3>Kindly fill your survey form below...</h3>
+          <br>
+          <br>
+          <br>
+          <div class=" well">
+            <label for="name" class="col-form-label">Name</label>
+              <input id="name" class="form-control" type="text">
           </div>
+          <div class="form-group">
+            <label for="age">You fall under which age catogory</label>
+            <select id="age" class="form-control">
+              <option value="Below20">Below 20</option>
+              <option value="20To30">20-30</option>
+              <option value="30To50">30-50</option>
+              <option value="above50">Above50</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="education"> Highest Education</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="education" value="12th Graduate" checked>
+                12th Graduate
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="education" value="Diploma">
+                Diploma
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="education" value="Bachalor">
+                Bachalor
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="education" value="Master">
+                Master
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="code">Do have coding knowedgle?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="code" value="no" checked>No
+
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="code" value="yes">Yes
+              </label>
+            </div>
+          </div>
+          
           <div class="col-md-2">
             <h3>Saswati Patra</h3>
             <br>

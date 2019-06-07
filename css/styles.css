@@ -1,5 +1,10 @@
+#results, #begginer, #intermid, #expert, #noprograming, #bluff {
+  display: none;
+}
+
+
 body{
-  background-color:#F68C97;
+  background-color:white;
 }
 h3 {
   font-style: italic;
@@ -16,7 +21,4 @@ p {
 h1 {
   font-style:oblique;
   text-align: center;
-}
-#reults, #begginer, #intermid, #expert{
-  display: none;
 }

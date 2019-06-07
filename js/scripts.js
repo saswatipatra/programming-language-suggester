@@ -1,8 +1,6 @@
 $(document).ready(function() {
-  $("button#continue").click(function() {
-    $("body").addClass("continue");
-  });
-  $("#name-form").submit(function(event) {
+  $("#surveyForm").submit(function(event) {
+    event.preventDefault();
     var inputName = $("input#name").val();
     var age = $("#age").val();
     var education = $("input:radio[name=education]:checked").val();
@@ -10,23 +8,20 @@ $(document).ready(function() {
     var intrest = $("input:radio[name=intrest]:checked").val();
   var experience = $("input:radio[name=experience]:checked").val();
     $(".name").text(inputName);
-
-    if(intrest===yes) {
-      if (code===No && experience ===No){
+    $("#results").show();
+    if(intrest==="yes" && code==="no" && experience ==="no"){
         $("#begginer").show();
-      }else if (code===Yes && experience===Yes) {
+      }else if(intrest==="yes"&& code==="yes" && experience==="yes") {
         $("#expert").show();
-      }else if (code===Yes && experience===NO) {
+      }else if(intrest==="yes" && code==="yes" && experience==="nO") {
         $("#intermid").show();
-      }else if (code===NO && experience== Yes) {
+      }else if(intrest==="yes" && code==="nO" && experience== "yes") {
         $("#bluff").show();
-      }
-    }else {
+      }else {
       $("#noprograming").show();
     }
 
-    $("#receipt").show();
 
-    event.preventDefault();
+
   });
 });

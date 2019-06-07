@@ -1,26 +1,29 @@
 $(document).ready(function() {
+  $("button#continue").click(function() {
+    $("body").addClass("continue");
+  });
   $("#name-form").submit(function(event) {
     var inputName = $("input#name").val();
-    var inputAddress1 = $("input#address1").val();
-    var inputAddress2 = $("input#address2").val();
-    var inputCity = $("input#city").val();
-    var inputState = $("input#state").val();
-    var inputZip = $("input#zip").val();
-    var inputCountry = $("input#country").val();
-    var date = $("#date").val();
-    var item = $("#item").val();
-    var size = $("input:radio[name=size]:checked").val();
-
+    var age = $("#age").val();
+    var education = $("input:radio[name=education]:checked").val();
+    var code = $("input:radio[name=code]:checked").val();
+    var intrest = $("input:radio[name=intrest]:checked").val();
+  var experience = $("input:radio[name=experience]:checked").val();
     $(".name").text(inputName);
-    $(".address1").text(inputAddress1);
-    $(".address2").text(inputAddress2);
-    $(".city").text(inputCity);
-    $(".state").text(inputState);
-    $(".zip").text(inputZip);
-    $(".country").text(inputCountry);
-    $(".date").text(date);
-    $(".item").text(item);
-    $(".size").text(size);
+
+    if(intrest===yes) {
+      if (code===No && experience ===No){
+        $("#begginer").show();
+      }else if (code===Yes && experience===Yes) {
+        $("#expert").show();
+      }else if (code===Yes && experience===NO) {
+        $("#intermid").show();
+      }else if (code===NO && experience== Yes) {
+        $("#bluff").show();
+      }
+    }else {
+      $("#noprograming").show();
+    }
 
     $("#receipt").show();
 

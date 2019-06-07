@@ -14,91 +14,125 @@
           <p>Kindly click below to take the survey and get to know which programming Language you should start with</p>
           <button class="btn btn-success" id="continue">Continue</button>
       </div>
-      <form id="surveyForm">
-        <h3>Kindly fill your survey form below...</h3>
-        <br>
-        <br>
-        <br>
-        <div class="form-group well">
-          <label for="name" class="col-form-label">Name</label>
-            <input id="name" class="form-control" type="text">
+      <div class="continue">
+        <form id="surveyForm">
+          <h3>Kindly fill your survey form below...</h3>
+          <br>
+          <br>
+          <br>
+          <div class="form-group well">
+            <label for="name" class="col-form-label">Name</label>
+              <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="age">You fall under which age catogory</label>
+            <select id="age" class="form-control">
+              <option value="Below20">Below 20</option>
+              <option value="20To30">20-30</option>
+              <option value="30To50">30-50</option>
+              <option value="above50">Above50</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="education"> Highest Education</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="education" value="12th" checked>12th Graduate
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="education" value="diploma">Diploma
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="education" value="bachelor">bachelor's degree
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="education" value="MSc">
+                  MSc
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="code">Do have coding knowedgle?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="code" value="no" checked>No
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="code" value="yes">Yes
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="intrest">Do have intrest in lerning programming?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="intrest" value="no" checked>No
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="intrest" value="yes">Yes
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="experience">Do have any coding experience?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="experience" value="no" checked>No
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="experience" value="yes">Yes
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="age">You fall under which age catogory</label>
-          <select id="age" class="form-control">
-            <option value="Below20">Below 20</option>
-            <option value="20To30">20-30</option>
-            <option value="30To50">30-50</option>
-            <option value="above50">Above50</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="education"> Highest Education</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="education" value="12th" checked>12th Graduate
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="education" value="diploma">Diploma
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="education" value="bachelor">bachelor's degree
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="education" value="MSc">
-                MSc
-              </label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="code">Do have coding knowedgle?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="code" value="no" checked>No
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="code" value="yes">Yes
-              </label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="intrest">Do have intrest in lerning programming?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="intrest" value="no" checked>No
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="intrest" value="yes">Yes
-              </label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="experience">Do have any coding experience?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="experience" value="no" checked>No
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="experience" value="yes">Yes
-              </label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
 
-          
+        <br>
+        <div id="results">
+          <p>Here is your survey outcome...</p>
+          <div class="card">
+            <div class="card-body row">
+              <p>Dear <span class="name"></span>,</p>
+            </div>
+          </div>
+        </div>
+        <div id="begginer">
+          <p>you should start with</p>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>Ruby</li>
+        </div>
+        <div id="intermid">
+          <p>you should start with</p>
+          <li>Ruby</li>
+          <li>Go</li>
+          <li>Phython</li>
+        </div>
+        <div id="expert">
+          <p>you should start with</p>
+          <li>Phython</li>
+          <li>Rust</li>
+          <li>Swift</li>
+        </div>
+        <div id="bluff">
+          <p>How can you get experience in programming without the knowedgle of coding</p>
+        </div>
+        <div id="noprograming">
+          <p>you should try something in which you have intrest</p>
+        </div>
 
     </div>
 

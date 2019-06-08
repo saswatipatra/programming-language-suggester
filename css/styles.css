@@ -9,6 +9,7 @@ body{
 h3 {
   font-style: italic;
   text-align: center;
+  text-decoration: underline;
 }
 p {
   text-align: center;
@@ -21,13 +22,29 @@ p {
 h1 {
   font-style:oblique;
   text-align: center;
+  font-weight:;
 }
 #results{
   text-align: left;
   font-style: italic;
+}
+.card1{
+  font-size: 30px;
   color: blue;
+  font-style: italic;
 
 }
+h6 {
+  text-align:center;
+  font-family: cursive;
+  font-weight: bold;
+}
 .card{
-  border-color: black;
+  font-style: italic;
+  font-weight: bold;
+  margin: 1px;
+  border: 2px solid green;
+  padding: 4px;
+  background-color: grey;
+  text-align: justify;
 }

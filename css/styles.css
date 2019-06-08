@@ -22,3 +22,12 @@ h1 {
   font-style:oblique;
   text-align: center;
 }
+#results{
+  text-align: left;
+  font-style: italic;
+  color: blue;
+
+}
+.card{
+  border-color: black;
+}

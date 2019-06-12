@@ -2,21 +2,38 @@
   display: none;
 }
 
-
-body{
-  background-color:white;
+body,html{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+.background{
+  background: radial-gradient(circle, black, white);
+  /* background-image: url(https://techcrunch.com/wp-content/uploads/2018/10/GettyImages-1005882486.jpg?w=730&crop=1); */
+  margin:0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 h3 {
   font-style: italic;
   text-align: center;
   text-decoration: underline;
+  font-weight: bolder;
 }
 p {
   text-align: center;
 }
 
-.back-color1 {
+.header {
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 20%;
   background: #D5F68C;
+  float:inherit;
 }
 
 h1 {
@@ -47,4 +64,12 @@ h6 {
   padding: 4px;
   background-color: grey;
   text-align: justify;
+}
+
+.goToSuveryButton{
+float: left;
+margin:10%;
+margin-left:45%;
+color: blue;
+font-weight: bolder;
 }

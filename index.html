@@ -7,15 +7,19 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
-  <body>
+  <body class="background">
     <div class="container">
-      <div class="back-color1 well">
+      <div class="header status well">
           <h1>Welcome to our suggestion survey page... </h1>
           <p>Kindly submit the survey below and get to know which programming Language you should start with</p>
 
       </div>
+      <div class="goToSuveryButton status">
+        <button onclick="surveyFormButton()">Continue Survey</button>
+      </div>
+
       <div class="continue">
-        <form id="surveyForm">
+        <form id="surveyForm" class="status">
           <h3>Kindly fill your survey form below...</h3>
           <br>
           <br>
@@ -101,7 +105,7 @@
         </div>
 
         <br>
-
+      <div class=" output status">
         <div id="results">
           <p>Here is your survey outcome...</p>
           <br>
@@ -110,33 +114,37 @@
             <p>Dear <span class="name"></span>,</p>
           </div>
         </div>
-        <div id="begginer" class= "card">
+        <div id="begginer" class= "card status">
           <p>you should start with:</p>
           <h6>1. JavaScript</h6>
           <h6>2. C#</h6>
           <h6>3. Ruby</h6>
         </div>
-        <div id="intermid"class= "card">
+        <div id="intermid"class= "card status">
           <p>you should start with:</p>
           <h6>1. Ruby</h6>
           <h6>2. Go</h6>
           <h6>3. Phython</h6>
         </div>
-        <div id="expert"class= "card">
+        <div id="expert"class= "card status">
           <p>you should start with:</p>
           <h6>1. Phython</h6>
           <h6>2. Rust</h6>
           <h6>3. Swift</h6>
         </div>
-        <div id="bluff"class= "card">
+        <div id="bluff"class= "card status">
           <p>How can you get experience in programming without the knowedgle of coding</p>
         </div>
-        <div id="noprograming"class= "card">
+        <div id="noprograming"class= "card status">
           <p>you should try something in which you have intrest</p>
         </div>
-
+        <div class="goToSuveryButton1 status">
+          <button onclick="surveyFormButton()">survey Page</button>
+        </div>
+      </div>
+        <div class="mainPageButton status">
+          <button onclick="mainPageButton()">Main page</button>
+        </div>
     </div>
-
-
   </body>
 </html>

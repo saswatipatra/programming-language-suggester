@@ -1,6 +1,6 @@
 # _Programming-language-suggester_
 
-#### _A webpage application for people interested in coding to decide which language they should learn first., v1.0.0 06.07.2019}_
+#### _A webpage application for people interested in coding to decide which language they should learn first., v1.0.0 06.07.2019_
 
 #### By _** Saswati Patra**_
 
@@ -12,16 +12,16 @@ _An application for people interested in coding to decide which language they sh
 
 * _Open the Terminal (Mac) or Git Bash (PC)_
 * _Go to the dir. where you would like to install the file. (for ex. computer-name:~ Guest$ cd desktop_
-* _To make a copy of a repository from Github on a local machine computer-name:desktop Guest$ git clone https://github.com/saswatipatra/programming-language-suggester )._
-* _4. Hola a new file should appear named "programming language suggester", simply click on the HTML file. _
+* _To make a copy of a repository from Github on a local machine computer-name:desktop Guest$ git clone https://github.com/saswatipatra/programming-language-suggester _
+* _Hola a new file should appear named "programming language suggester", simply click on the HTML file_
 
 ## Support and contact details
 
 _For any syntax errors please review the Setup/Installation Requirements section above and follow the above steps.
 
-####Please insure you are in the correct directory in the terminal.
+_Please insure you are in the correct directory in the terminal_
 
-Feel free to get in contact with any questions, concerns, or if you want to make contributions to the code at: *p403p403saswati@gmail.com_
+_Feel free to get in contact with any questions, concerns, or if you want to make contributions to the code at: *p403saswati@gmail.com_
 
 ## Technologies Used
 
